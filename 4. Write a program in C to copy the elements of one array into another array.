@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    int arr1[100]={0},arr2[100]={0};
+    int sum=0;
+    printf("Numbers of elements you want to input ? ");
+    scanf("%d",&n);
+    printf("Input %d elements in the array :\n",n);
+    for(int i=0;i<n;i++){
+        printf("element - %d: ",i);
+        scanf("%d",&arr1[i]);
+       arr2[i]=arr1[i];
+        
+    }
+    printf("The elements stored in first array :\n");
+     for(int i=0;i<n;i++){
+        printf("%d ",arr1[i]);
+       
+        
+    }
+    
+    printf("\n The elements stored in second array : \n");
+    for(int i=0;i<n;i++){
+        printf("%d ",arr2[i]);
+    }
+
+    
+
+    
+   
+
+    return 0;
+}
